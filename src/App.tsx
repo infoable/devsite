@@ -1,9 +1,10 @@
 import React from 'react';
+import Main from './components/Main';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      Welcome Able
+      <Main />
     </div>
   );
 }
