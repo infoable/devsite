@@ -1,10 +1,12 @@
 import React from 'react';
-import Main from './components/Main';
+import { Route } from 'react-router-dom'
+import loadable from '@loadable/component';
 
+const IndexPage = loadable(() => import('./pages/Index'));
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Main />
+      <Route exact path="/" component={IndexPage}></Route>
     </div>
   );
 }
